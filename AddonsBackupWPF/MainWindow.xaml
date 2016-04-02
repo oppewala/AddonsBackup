@@ -1,0 +1,27 @@
+﻿<Window x:Class="AddonsBackupWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddonsBackupWPF"
+        mc:Ignorable="d"
+        Title="Addon Backup" Width="540.977" ResizeMode="NoResize" Height="463.17">
+    <Grid Margin="10">
+        <Label x:Name="warcraftLabel" Content="World of Warcraft Directory" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="backupLabel" Content="Backup Directory" HorizontalAlignment="Left" Margin="5,80,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="warcraftDir" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" Text="Warcraft Directory" VerticalAlignment="Top" Width="370"/>
+        <TextBox x:Name="backupDir" HorizontalAlignment="Left" Height="23" Margin="10,111,0,0" TextWrapping="Wrap" Text="BackupDirectory" VerticalAlignment="Top" Width="370"/>
+        <Button x:Name="warcraftDirBrowse" Content="Browse..." HorizontalAlignment="Left" Margin="385,41,0,0" VerticalAlignment="Top" Width="111" Height="23" Click="warcraftDirBrowse_Click" RenderTransformOrigin="0.503,0.493"/>
+        <Button x:Name="backupDirBrowse" Content="Browse..." HorizontalAlignment="Left" Margin="385,111,0,0" VerticalAlignment="Top" Width="111" Height="23" Click="backupDirBrowse_Click"/>
+        <TextBox x:Name="uiName" HorizontalAlignment="Left" Height="23" Margin="10,177,0,0" TextWrapping="Wrap" Text="InterfaceName" VerticalAlignment="Top" Width="335"/>
+        <Label x:Name="uiNameLabel" Content="UI Name" HorizontalAlignment="Left" Margin="5,145,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="uiVersionLabel" Content="UI Revision" HorizontalAlignment="Left" Margin="345,151,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="uiRevision" HorizontalAlignment="Left" Height="23" Margin="350,177,0,0" TextWrapping="Wrap" Text="VersionNumber" VerticalAlignment="Top" Width="146"/>
+        <Button x:Name="backupButton" Content="Backup!" HorizontalAlignment="Left" Margin="109,216,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="20" Margin="189,216,0,0" VerticalAlignment="Top" Width="307" IsEnabled="False"/>
+        <Button x:Name="configSave" Content="Save Settings" HorizontalAlignment="Left" Margin="10,216,0,0" VerticalAlignment="Top" Width="94" Click="configSave_Click"/>
+        <TextBox x:Name="logText" HorizontalAlignment="Left" Height="137" Margin="10,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="486" Focusable="False" IsTabStop="False"/>
+        <TextBlock x:Name="statusText" HorizontalAlignment="Left" Margin="196,218,0,0" TextWrapping="Wrap" Text="Waiting..." VerticalAlignment="Top" Width="293"/>
+
+    </Grid>
+</Window>
